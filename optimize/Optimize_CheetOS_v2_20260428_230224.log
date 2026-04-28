@@ -1,0 +1,317 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260428230224
+Username: DINOZAUR15\Mati
+RunAs User: DINOZAUR15\Mati
+Configuration Name: 
+Machine: DINOZAUR15 (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File .\Optimize_CheetOS_v2.ps1 -SearchboxTaskbarMode 1
+Process ID: 19804
+PSVersion: 5.1.19041.6456
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.6456
+BuildVersion: 10.0.19041.6456
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+
+=== SYSTEM POLICIES ===
+[REG] HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudContent :: DisableWindowsConsumerFeatures = 1
+[REG] HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudContent :: DisableSoftLanding = 1
+[REG] HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudContent :: DisableThirdPartySuggestions = 1
+[REG] HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Search :: AllowCortana = 0
+[REG] HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Search :: DisableWebSearch = 1
+[REG] HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Search :: ConnectedSearchUseWeb = 0
+[REG] HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Search :: AllowCloudSearch = 0
+[REG] HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Feeds :: EnableFeeds = 0
+[REG] HKLM:\SOFTWARE\Policies\Microsoft\WindowsStore :: RemoveWindowsStore = 1
+[REG] HKLM:\SOFTWARE\Policies\Microsoft\WindowsStore :: DisableStoreApps = 1
+[REG] HKLM:\SOFTWARE\Policies\Microsoft\WindowsStore :: AutoDownload = 2
+[REG] HKLM:\SOFTWARE\Policies\Microsoft\Windows\GameDVR :: AllowGameDVR = 0
+[REG] HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR :: AppCaptureEnabled = 0
+[REG] HKLM:\SOFTWARE\Microsoft\PolicyManager\default\ApplicationManagement\AllowGameDVR :: value = 0
+[REG] HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp :: KeepAliveEnable = 1
+[REG] HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp :: KeepAliveInterval = 1
+
+=== APPX BLOAT REMOVAL ===
+[APPX] Remove package Microsoft.XboxGameCallableUI
+PS>TerminatingError(Remove-AppxPackage): "Removal failed. Please contact your software vendor.
+
+Deployment Remove operation with target volume C: on Package Microsoft.XboxGameCallableUI_1000.19041.4239.0_neutral_neutral_cw5n1h2txyewy from:   failed with error 0x80070032. See http://go.microsoft.com/fwlink/?LinkId=235160 for help diagnosing app deployment issues."
+
+=== SERVICES ===
+[SVC] Disabled DiagTrack
+[SVC] Disabled dmwappushservice
+[SVC] Disabled MapsBroker
+[SVC] Disabled lfsvc
+[SVC] Disabled WMPNetworkSvc
+[SVC] Disabled XblAuthManager
+[SVC] Disabled XblGameSave
+[SVC] Disabled XboxGipSvc
+[SVC] Disabled XboxNetApiSvc
+[SVC] Disabled Fax
+[SVC] Disabled WerSvc
+[SVC] Disabled RetailDemo
+[SVC] Disabled WbioSrvc
+[SVC] Disabled PhoneSvc
+[SVC] Disabled TabletInputService
+[SVC] Disabled SEMgrSvc
+[SVC] Disabled DSAService
+[SVC] Disabled DSAUpdateService
+[SVC] Disabled LMS
+[SVC] Disabled jhi_service
+[SVC] Disabled MicrosoftEdgeElevationService
+[SVC] Disabled edgeupdate
+[SVC] Disabled edgeupdatem
+[SVC] Disabled Spooler
+[SVC] Disabled WSearch
+[SVC] Disabled wuauserv
+[SVC] Disabled UsoSvc
+PS>TerminatingError(Set-Service): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: Service 'Delivery Optimization (DoSvc)' cannot be configured due to the following error: Access is denied"
+WARNING: Service disable failed: DoSvc :: Service 'Delivery Optimization (DoSvc)' cannot be configured due to the following error: Access is denied
+[SVC] Disabled BITS
+PS>TerminatingError(Set-Service): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: Service 'Windows Update Medic Service (WaaSMedicSvc)' cannot be configured due to the following error: Access is denied"
+WARNING: Service disable failed: WaaSMedicSvc :: Service 'Windows Update Medic Service (WaaSMedicSvc)' cannot be configured due to the following error: Access is denied
+
+=== SCHEDULED TASKS ===
+[TASK] Disabled \MicrosoftEdgeUpdateTaskMachineCore
+[TASK] Disabled \MicrosoftEdgeUpdateTaskMachineUA
+[TASK] Disabled \Microsoft\Windows\Application Experience\MareBackup
+[TASK] Disabled \Microsoft\Windows\Application Experience\Microsoft Compatibility Appraiser
+[TASK] Disabled \Microsoft\Windows\Application Experience\PcaPatchDbTask
+[TASK] Disabled \Microsoft\Windows\Application Experience\PcaWallpaperAppDetect
+[TASK] Disabled \Microsoft\Windows\Application Experience\ProgramDataUpdater
+[TASK] Disabled \Microsoft\Windows\Application Experience\StartupAppTask
+[TASK] Disabled \Microsoft\Windows\Autochk\Proxy
+[TASK] Disabled \Microsoft\Windows\CloudExperienceHost\CreateObjectTask
+[TASK] Disabled \Microsoft\Windows\Customer Experience Improvement Program\Consolidator
+[TASK] Disabled \Microsoft\Windows\Customer Experience Improvement Program\UsbCeip
+[TASK] Disabled \Microsoft\Windows\Feedback\Siuf\DmClient
+[TASK] Disabled \Microsoft\Windows\Feedback\Siuf\DmClientOnScenarioDownload
+[TASK] Disabled \Microsoft\Windows\Maps\MapsToastTask
+[TASK] Disabled \Microsoft\Windows\Maps\MapsUpdateTask
+[TASK] Disabled \Microsoft\Windows\Shell\CreateObjectTask
+[TASK] Disabled \Microsoft\Windows\Shell\FamilySafetyMonitor
+[TASK] Disabled \Microsoft\Windows\Shell\FamilySafetyRefreshTask
+[TASK] Disabled \Microsoft\Windows\Shell\IndexerAutomaticMaintenance
+[TASK] Disabled \Microsoft\Windows\Shell\ThemesSyncedImageDownload
+PS>TerminatingError(Disable-ScheduledTask): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: Access is denied.
+"
+WARNING: Task disable failed: \Microsoft\Windows\Shell\UpdateUserPictureTask :: Access is denied.
+[TASK] Disabled \Microsoft\Windows\Windows Error Reporting\QueueReporting
+[TASK] Disabled \Microsoft\XblGameSave\XblGameSaveTask
+
+=== DEFAULT PROFILE TASKBAR LAYOUT ===
+
+=== USER PROFILE: Acc1 ===
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: ContentDeliveryAllowed = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: FeatureManagementEnabled = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: OemPreInstalledAppsEnabled = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: PreInstalledAppsEnabled = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: PreInstalledAppsEverEnabled = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SilentInstalledAppsEnabled = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SoftLandingEnabled = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContentEnabled = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContent-310093Enabled = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContent-338388Enabled = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContent-338389Enabled = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContent-338393Enabled = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContent-353694Enabled = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContent-353696Enabled = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SystemPaneSuggestionsEnabled = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: RotatingLockScreenEnabled = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: RotatingLockScreenOverlayEnabled = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\Search :: SearchboxTaskbarMode = 1
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\Search :: BingSearchEnabled = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\Search :: CortanaConsent = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\Search :: CanCortanaBeEnabled = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\Search :: AllowSearchToUseLocation = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\Search :: DeviceHistoryEnabled = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\Search :: HistoryViewEnabled = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: ShowTaskViewButton = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: ShowCortanaButton = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: SearchboxTaskbarMode = 1
+PS>TerminatingError(New-ItemProperty): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: Attempted to perform an unauthorized operation."
+WARNING: REG failed: HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: TaskbarDa :: Attempted to perform an unauthorized operation.
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: TaskbarMn = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: TaskbarGlomLevel = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: MMTaskbarGlomLevel = 0
+PS>TerminatingError(New-ItemProperty): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: Attempted to perform an unauthorized operation."
+WARNING: REG failed: HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\Feeds :: ShellFeedsTaskbarViewMode :: Attempted to perform an unauthorized operation.
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\Feeds :: ShellFeedsFeedAllowed = 0
+PS>TerminatingError(New-ItemProperty): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: Attempted to perform an unauthorized operation."
+WARNING: REG failed: HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\Feeds :: IsFeedsAvailable :: Attempted to perform an unauthorized operation.
+[REG] HKU:\Acc1\Control Panel\Desktop :: Wallpaper =
+[REG] HKU:\Acc1\Control Panel\Desktop :: WallpaperStyle = 0
+[REG] HKU:\Acc1\Control Panel\Colors :: Background = 0 0 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects :: VisualFXSetting = 2
+[REG] HKU:\Acc1\Control Panel\Desktop :: DragFullWindows = 0
+[REG] HKU:\Acc1\Control Panel\Desktop :: MenuShowDelay = 0
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer :: DisallowRun = 1
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun :: 1 = AnyDesk.exe
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun :: 2 = RustDesk.exe
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun :: 3 = tailscale-ipn.exe
+[REG] HKU:\Acc1\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun :: 4 = tailscale.exe
+[OK] Acc1 profile optimized
+
+=== USER PROFILE: Acc2 ===
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: ContentDeliveryAllowed = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: FeatureManagementEnabled = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: OemPreInstalledAppsEnabled = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: PreInstalledAppsEnabled = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: PreInstalledAppsEverEnabled = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SilentInstalledAppsEnabled = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SoftLandingEnabled = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContentEnabled = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContent-310093Enabled = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContent-338388Enabled = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContent-338389Enabled = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContent-338393Enabled = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContent-353694Enabled = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContent-353696Enabled = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SystemPaneSuggestionsEnabled = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: RotatingLockScreenEnabled = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: RotatingLockScreenOverlayEnabled = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\Search :: SearchboxTaskbarMode = 1
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\Search :: BingSearchEnabled = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\Search :: CortanaConsent = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\Search :: CanCortanaBeEnabled = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\Search :: AllowSearchToUseLocation = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\Search :: DeviceHistoryEnabled = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\Search :: HistoryViewEnabled = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: ShowTaskViewButton = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: ShowCortanaButton = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: SearchboxTaskbarMode = 1
+PS>TerminatingError(New-ItemProperty): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: Attempted to perform an unauthorized operation."
+WARNING: REG failed: HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: TaskbarDa :: Attempted to perform an unauthorized operation.
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: TaskbarMn = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: TaskbarGlomLevel = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: MMTaskbarGlomLevel = 0
+PS>TerminatingError(New-ItemProperty): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: Attempted to perform an unauthorized operation."
+WARNING: REG failed: HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\Feeds :: ShellFeedsTaskbarViewMode :: Attempted to perform an unauthorized operation.
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\Feeds :: ShellFeedsFeedAllowed = 0
+PS>TerminatingError(New-ItemProperty): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: Attempted to perform an unauthorized operation."
+WARNING: REG failed: HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\Feeds :: IsFeedsAvailable :: Attempted to perform an unauthorized operation.
+[REG] HKU:\Acc2\Control Panel\Desktop :: Wallpaper =
+[REG] HKU:\Acc2\Control Panel\Desktop :: WallpaperStyle = 0
+[REG] HKU:\Acc2\Control Panel\Colors :: Background = 0 0 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects :: VisualFXSetting = 2
+[REG] HKU:\Acc2\Control Panel\Desktop :: DragFullWindows = 0
+[REG] HKU:\Acc2\Control Panel\Desktop :: MenuShowDelay = 0
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer :: DisallowRun = 1
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun :: 1 = AnyDesk.exe
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun :: 2 = RustDesk.exe
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun :: 3 = tailscale-ipn.exe
+[REG] HKU:\Acc2\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun :: 4 = tailscale.exe
+[OK] Acc2 profile optimized
+
+=== USER PROFILE: Acc3 ===
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: ContentDeliveryAllowed = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: FeatureManagementEnabled = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: OemPreInstalledAppsEnabled = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: PreInstalledAppsEnabled = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: PreInstalledAppsEverEnabled = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SilentInstalledAppsEnabled = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SoftLandingEnabled = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContentEnabled = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContent-310093Enabled = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContent-338388Enabled = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContent-338389Enabled = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContent-338393Enabled = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContent-353694Enabled = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContent-353696Enabled = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SystemPaneSuggestionsEnabled = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: RotatingLockScreenEnabled = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: RotatingLockScreenOverlayEnabled = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\Search :: SearchboxTaskbarMode = 1
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\Search :: BingSearchEnabled = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\Search :: CortanaConsent = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\Search :: CanCortanaBeEnabled = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\Search :: AllowSearchToUseLocation = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\Search :: DeviceHistoryEnabled = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\Search :: HistoryViewEnabled = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: ShowTaskViewButton = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: ShowCortanaButton = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: SearchboxTaskbarMode = 1
+PS>TerminatingError(New-ItemProperty): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: Attempted to perform an unauthorized operation."
+WARNING: REG failed: HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: TaskbarDa :: Attempted to perform an unauthorized operation.
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: TaskbarMn = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: TaskbarGlomLevel = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: MMTaskbarGlomLevel = 0
+PS>TerminatingError(New-ItemProperty): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: Attempted to perform an unauthorized operation."
+WARNING: REG failed: HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\Feeds :: ShellFeedsTaskbarViewMode :: Attempted to perform an unauthorized operation.
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\Feeds :: ShellFeedsFeedAllowed = 0
+PS>TerminatingError(New-ItemProperty): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: Attempted to perform an unauthorized operation."
+WARNING: REG failed: HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\Feeds :: IsFeedsAvailable :: Attempted to perform an unauthorized operation.
+[REG] HKU:\Acc3\Control Panel\Desktop :: Wallpaper =
+[REG] HKU:\Acc3\Control Panel\Desktop :: WallpaperStyle = 0
+[REG] HKU:\Acc3\Control Panel\Colors :: Background = 0 0 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects :: VisualFXSetting = 2
+[REG] HKU:\Acc3\Control Panel\Desktop :: DragFullWindows = 0
+[REG] HKU:\Acc3\Control Panel\Desktop :: MenuShowDelay = 0
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer :: DisallowRun = 1
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun :: 1 = AnyDesk.exe
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun :: 2 = RustDesk.exe
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun :: 3 = tailscale-ipn.exe
+[REG] HKU:\Acc3\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun :: 4 = tailscale.exe
+[OK] Acc3 profile optimized
+
+=== USER PROFILE: Acc4 ===
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: ContentDeliveryAllowed = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: FeatureManagementEnabled = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: OemPreInstalledAppsEnabled = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: PreInstalledAppsEnabled = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: PreInstalledAppsEverEnabled = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SilentInstalledAppsEnabled = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SoftLandingEnabled = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContentEnabled = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContent-310093Enabled = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContent-338388Enabled = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContent-338389Enabled = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContent-338393Enabled = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContent-353694Enabled = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SubscribedContent-353696Enabled = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: SystemPaneSuggestionsEnabled = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: RotatingLockScreenEnabled = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager :: RotatingLockScreenOverlayEnabled = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\Search :: SearchboxTaskbarMode = 1
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\Search :: BingSearchEnabled = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\Search :: CortanaConsent = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\Search :: CanCortanaBeEnabled = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\Search :: AllowSearchToUseLocation = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\Search :: DeviceHistoryEnabled = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\Search :: HistoryViewEnabled = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: ShowTaskViewButton = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: ShowCortanaButton = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: SearchboxTaskbarMode = 1
+PS>TerminatingError(New-ItemProperty): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: Attempted to perform an unauthorized operation."
+WARNING: REG failed: HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: TaskbarDa :: Attempted to perform an unauthorized operation.
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: TaskbarMn = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: TaskbarGlomLevel = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced :: MMTaskbarGlomLevel = 0
+PS>TerminatingError(New-ItemProperty): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: Attempted to perform an unauthorized operation."
+WARNING: REG failed: HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\Feeds :: ShellFeedsTaskbarViewMode :: Attempted to perform an unauthorized operation.
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\Feeds :: ShellFeedsFeedAllowed = 0
+PS>TerminatingError(New-ItemProperty): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: Attempted to perform an unauthorized operation."
+WARNING: REG failed: HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\Feeds :: IsFeedsAvailable :: Attempted to perform an unauthorized operation.
+[REG] HKU:\Acc4\Control Panel\Desktop :: Wallpaper =
+[REG] HKU:\Acc4\Control Panel\Desktop :: WallpaperStyle = 0
+[REG] HKU:\Acc4\Control Panel\Colors :: Background = 0 0 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects :: VisualFXSetting = 2
+[REG] HKU:\Acc4\Control Panel\Desktop :: DragFullWindows = 0
+[REG] HKU:\Acc4\Control Panel\Desktop :: MenuShowDelay = 0
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer :: DisallowRun = 1
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun :: 1 = AnyDesk.exe
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun :: 2 = RustDesk.exe
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun :: 3 = tailscale-ipn.exe
+[REG] HKU:\Acc4\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun :: 4 = tailscale.exe
+[OK] Acc4 profile optimized
+
+DONE. Log: C:\CheetOS\Logs\Optimize_CheetOS_v2_20260428_230224.log
+Zalecane: wyloguj/zaloguj Acc1-Acc4 albo restart hosta, zeby Taskbar/Explorer przeladowal layout.
+**********************
+Windows PowerShell transcript end
+End time: 20260428230250
+**********************
